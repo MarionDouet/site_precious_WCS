@@ -1,0 +1,413 @@
+body{
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;    
+}
+
+section{
+    background-color: gray;
+    padding: 70px;
+}
+
+h2{
+    font-family: 'Macondo Swash Caps', cursive;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+h3{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.color{
+    background-image: linear-gradient(black, gray);
+    width: 100%;
+    height: 100px;
+}
+
+.color2{
+    background-image: linear-gradient(gray, black);
+    width: 100%;
+    height: 100px;
+}
+
+
+
+header {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:black
+}
+
+.logo{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.navLinks li{
+    list-style: none;
+    text-align: center;
+}
+
+.navLinks a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px
+}
+
+/* BANDEAU */
+.home{
+    background-image: url(img/silhouettes_resize.jpg);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 600px;
+    position: relative
+}
+.home h1{
+    font-size: 40px;
+    font-family: 'Macondo Swash Caps', cursive;
+}
+
+.home h2{
+    font-size: 30px;
+    font-family: 'Macondo Swash Caps', cursive;
+}
+
+.contenu{
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+/* FELLOWS*/
+
+
+.menuFellows{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: lightgray;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    list-style: none;
+    padding: 40px;
+}
+
+.menuFellows a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    background-color: lightgray;
+}
+
+.menuFellows a:hover{
+    color: black;
+}
+
+#fellows h4{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 60px;
+    text-align: center;
+}
+
+#fellows img{
+    width: 300px;
+}
+
+.profilWanted{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 400px;
+}
+
+.portrait{
+    position: relative;
+}
+.imgportrait{
+    position: absolute;
+    opacity: 0.30;
+    z-index: 1;
+}
+
+
+
+.price{
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.45); 
+    font-size: 25px;
+    border-radius: 10px;
+    text-align: center; 
+    left: 40px;
+    top: 30px; 
+    width: 220px; 
+}
+
+.pseudo{
+    position: absolute;
+    z-index: 2;
+    font-size: 60px;
+    text-align: center;
+    color: white; 
+    left: 40px;
+    top: 100px;
+    width: 220px;   
+}
+
+span{
+    color: goldenrod;
+}
+
+
+
+
+/*animation des portraits*/
+
+.imgportrait:hover{
+    opacity: 1;
+}
+
+.imgportrait:hover + .price{
+    opacity: 0;
+}
+
+.imgportrait:hover + .price + .pseudo{
+     animation: slideDown 2s;
+     animation-fill-mode: forwards;
+}
+
+@keyframes slideDown{
+    0%{
+        transform: translateY(0px);
+        font-size: 60px;
+    }
+    100%{
+        transform: translateY(150px);
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*RING*/
+
+
+
+.ringCap{
+    background-color: rgba(255, 255, 255, 0.45);
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    border: solid 2px black;
+}
+
+.tableRing{
+    border-collapse: collapse;
+    width: 500px; 
+    height: 200px;     
+    margin-left: auto;  
+    margin-right: auto;
+    
+}
+
+.tableRing td{
+    border: 1px solid black;    
+}
+
+.awesome{
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 10px;
+    padding: 40px;
+    border: solid 2px black;       
+}
+
+.golum{
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:90px;
+    height:90px; 
+    
+}
+
+/*REWARD*/
+
+
+.txtReward{
+    width: 500px;
+    margin: 40px auto;
+    line-height: 30px;
+}
+
+.imgReward{
+    float: left;
+    margin-right: 15px;
+}
+.buttonContact{
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin:0 auto;
+    padding: 18px 10px 10px 10px;
+    text-align: center;
+    border: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+
+
+/*BEST HUNTERS*/
+
+.hunter{
+    display: flex;  
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+
+/*ARMY*/
+
+.army{ 
+    display: inline-block;
+}
+
+.txtArmy{
+    width: 700px;
+    margin: 70px auto;
+    line-height: 30px;
+}
+
+.imgArmy{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 700px; 
+}
+
+.buttonSauron{
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin:0 auto;
+    padding: 7px 10px 15px ;
+    text-align: center;
+    border: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+/* FORMULAIRE (améliorer bouton)*/
+
+
+.form{
+    margin: 0 auto;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: lightgrey;
+    border-radius: 1em   
+}
+
+label{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+input, #reason, button{
+    height: 30px;
+    vertical-align: middle;
+}
+input, #msg{
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 1em;
+} 
+
+#msg {
+    vertical-align: top;
+}    
+.form img{
+    width: 70px;
+    vertical-align: middle;
+}
+
+.button {
+    text-align: center;
+    padding: 20px;
+  }
+
+
+
+
+
+
+/* FOOTER OK*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:black;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer li{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;   
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px    
+}
